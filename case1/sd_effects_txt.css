@@ -6,7 +6,7 @@
    Case Problem 1
    
    Star Dust Stories Design Styles
-   Author: 
+   Author: Nguyễn Hoàng Tân
    Date:      
 
    Filename: sd_effects.css
@@ -14,24 +14,21 @@
 */
 
 /* HTML Styles */
-
-
+html {
+  background-image: url(sd_back1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /* Body Styles */
-
-
-
+body {
+  background-image: url(sd_back2.png);
+}
 
 /* Navigation List Styles */
 
-
-
-
 /* Section Left Styles */
 
-
-
-
 /* Footer Styles */
-
-
