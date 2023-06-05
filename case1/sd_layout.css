@@ -31,8 +31,6 @@ body {
   width: 90%;
   max-width: 1000px;
   min-width: 800px;
-  radial-gradient(circle closest-side at 40% 70%, white 15%, rgba(151, 151, 151, 0.5) 50%);
-
 }
 
 header {
@@ -153,7 +151,6 @@ section#right p {
   width: 62%;
   font-size: 12px;
 }
-
 
 /* footer styles */
 
