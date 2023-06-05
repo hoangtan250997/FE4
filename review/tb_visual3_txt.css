@@ -1,4 +1,9 @@
 @charset "utf-8";
+@font-face {
+  font-family: Palatino;
+  src: url(Palatino\ Linotype.ttf) format("ttf");
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 4
@@ -11,57 +16,64 @@
    Filename: tb_visual3.css
 
 */
-@font-face {
-  font-family: Champagne;
-  src: url(cac_champagne.woff) format("woff"),
-    url(cac_champagne.ttf) format("ttf");
-}
+
 /* HTML Styles */
+
 html {
   background-image: url(tb_back5.png);
 }
 
 /* Page Body Styles */
 body {
-  border-left: 3px solid rgb(169, 130, 88);
-  border-right: 3px solid rgb(169, 130, 88);
-  box-shadow: 25px 0px 35px rgb(53, 21, 0), -25px 0 35px rgb(53, 21, 0);
+  border-left: 3px solid rgb(169, 130, 80);
+  border-right: 3px solid rgb(169, 130, 80);
+  box-shadow: rgb(53, 21, 0) 25px 0px 35px, rgb(53, 21, 0) -25px 0px 35px;
 }
 
 /* Main Styles */
 main {
   background-image: url(tb_back7.png);
-  /* background-size: 100% cover; */
-  background-size: contain;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: padding-box;
   box-shadow: inset -10px -10px 25px rgb(71, 71, 71),
     inset 10px 10px 25px rgb(71, 71, 71);
+}
+
+main header h1 {
+  text-shadow: rgb(221, 221, 221) 1px 1px 0px,
+    rgba(41, 41, 41, 0.9) 5px 0px 20px;
 }
 /* Figure Box Styles */
 figure {
   margin: 10px auto;
   width: 70%;
 }
+
 figure img {
-  border-width: 25px;
-  border-style: solid;
+  border: 25px solid;
   border-image: url(tb_frame.png) 60 stretch;
   display: block;
   width: 100%;
   -webkit-filter: sepia(80%);
-  filter: sepia(80%);
 }
 
+figure figcaption {
+  font-family: Palatino, serif;
+  font-style: italic;
+  padding: 10px 0px;
+  text-align: center;
+}
 /* Article Styles */
 article {
   background-image: url(tb_back6.png);
+  background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 15%;
-  background-repeat: no-repeat;
-  border: 8px double rgb(147, 116, 68);
+  border-bottom: 8px double rgb(147, 116, 68);
+  border-right: 8px double rgb(147, 116, 68);
   border-bottom-right-radius: 80px;
-  box-shadow: -10px -10px 25px rgba(184, 154, 112, 0.7);
+  box-shadow: inset -10px -10px 25px rgba(184, 154, 112, 0.7);
 }
 
 /* Footer Styles */
